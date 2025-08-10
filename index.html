@@ -1,12 +1,141 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>我的 GitHub Pages</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>你的名字 · 个人网站</title>
+  <meta name="description" content="你的名字 · 前端/自媒体/AI 创作者的个人主页与项目展示" />
+  <meta property="og:title" content="你的名字 · 个人网站" />
+  <meta property="og:description" content="项目展示 / 关于我 / 联系方式" />
+  <meta name="color-scheme" content="light dark" />
+  <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-  <h1>✅ 成功上线</h1>
-  <p>这是 /docs 目录的 index.html</p>
+<header class="site-header blur">
+  <a href="#home" class="logo">你的名字</a>
+  <nav class="nav">
+    <a href="#works">作品</a>
+    <a href="#about">关于</a>
+    <a href="#contact" class="btn">联系我</a>
+  </nav>
+  <button class="menu" aria-label="打开菜单">☰</button>
+</header>
+
+<main id="home" class="hero">
+  <div class="hero-content reveal">
+    <p class="eyebrow">Hi, there 👋</p>
+    <h1>我用 <span class="grad">AI + 内容</span> 做更有想象力的作品</h1>
+    <p class="sub">前端 / 自媒体 / 增长顾问。擅长把复杂问题讲清楚，也能把点子快速落地成产品。</p>
+    <div class="cta">
+      <a class="btn primary" href="#works">查看作品</a>
+      <a class="btn" href="#contact">合作联系</a>
+    </div>
+    <ul class="badges">
+      <li>⚡ 48h 内交付 Demo</li>
+      <li>🎯 结果导向</li>
+      <li>📈 数据驱动</li>
+    </ul>
+  </div>
+  <div class="hero-art reveal">
+    <div class="blob"></div>
+    <img src="./images/cover.jpg" alt="封面插图（可替换）" onerror="this.style.display='none'"/>
+  </div>
+</main>
+
+<section id="works" class="section">
+  <div class="container">
+    <h2 class="section-title">作品展示</h2>
+    <p class="section-sub">挑三到六个代表作，点卡片可跳转。</p>
+
+    <div class="grid">
+      <!-- 卡片示例 1 -->
+      <article class="card reveal">
+        <div class="card-cover" style="background-image:url('./images/work1.jpg')"></div>
+        <div class="card-body">
+          <h3>AI 海报生成器</h3>
+          <p>一句话生成品牌海报，内置 12 套排版模板。</p>
+          <div class="tags"><span>AI</span><span>前端</span><span>营销</span></div>
+          <a class="link" href="https://example.com" target="_blank" rel="noopener">访问项目 →</a>
+        </div>
+      </article>
+
+      <!-- 卡片示例 2 -->
+      <article class="card reveal">
+        <div class="card-cover" style="background-image:url('./images/work2.jpg')"></div>
+        <div class="card-body">
+          <h3>个人知识库主题</h3>
+          <p>轻量博客主题，专注阅读体验与 SEO。</p>
+          <div class="tags"><span>主题</span><span>SEO</span></div>
+          <a class="link" href="https://example.com" target="_blank" rel="noopener">访问项目 →</a>
+        </div>
+      </article>
+
+      <!-- 卡片示例 3 -->
+      <article class="card reveal">
+        <div class="card-cover" style="background-image:url('./images/work3.jpg')"></div>
+        <div class="card-body">
+          <h3>数据看板模板</h3>
+          <p>快速搭建业务指标看板，开箱即用。</p>
+          <div class="tags"><span>Dashboard</span><span>可视化</span></div>
+          <a class="link" href="https://example.com" target="_blank" rel="noopener">访问项目 →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section alt">
+  <div class="container">
+    <h2 class="section-title">关于我</h2>
+    <div class="about">
+      <div class="about-text reveal">
+        <p>你好，我是 <strong>你的名字</strong>。专注 AI 应用落地、前端开发与内容创作。曾帮助多位创作者完成从 0→1 的产品验证与商业化。</p>
+        <ul class="list">
+          <li>💼 可提供：落地页/活动页/小工具 快速构建</li>
+          <li>🧰 常用栈：HTML/CSS/JS、Tailwind 思路、少依赖</li>
+          <li>🏆 成果：资讯号月均 100w+ 触达、多个 SEO 关键词 TOP3</li>
+        </ul>
+        <div class="chips">
+          <span>品牌页</span><span>增长实验</span><span>AI 工作流</span><span>短视频脚本</span>
+        </div>
+      </div>
+      <div class="about-card reveal">
+        <h3>当前开放合作</h3>
+        <ul class="tick">
+          <li>个人/公司官网设计与改版</li>
+          <li>爆款内容策略与执行</li>
+          <li>AI 办公流程搭建</li>
+        </ul>
+        <a class="btn primary block" href="#contact">约个时间聊聊</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="container">
+    <h2 class="section-title">联系我</h2>
+    <p class="section-sub">Email：<a href="mailto:youremail@example.com">youremail@example.com</a> · 微信：yourweixin</p>
+    <form class="contact reveal" action="https://formspree.io/f/yourcode" method="POST">
+      <input name="name" placeholder="你的称呼" required />
+      <input type="email" name="email" placeholder="你的邮箱（便于回复）" required />
+      <textarea name="message" rows="4" placeholder="简单描述你的需求…" required></textarea>
+      <button class="btn primary" type="submit">发送</button>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>© <span id="year"></span> 你的名字</span>
+    <div class="social">
+      <a href="#" aria-label="GitHub">GitHub</a>
+      <a href="#" aria-label="Twitter">Twitter/X</a>
+      <a href="#" aria-label="Bilibili">Bilibili</a>
+    </div>
+  </div>
+</footer>
+
+<script src="./script.js"></script>
 </body>
 </html>
